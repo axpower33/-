@@ -1,0 +1,32 @@
+extern float oldScX,oldScY;
+extern float oldminX,oldmaxX;
+extern float oldminY,oldmaxY;
+extern float GetmaxX;
+extern float GetmaxY;
+extern float GetminX;
+extern float GetminY;
+extern float GetScY;
+extern float GetScX;
+extern float rangeX;
+extern float rangeY;
+extern float rangeR;
+extern float rng;
+
+void far InitGraph (float far xmin, float far ymin,
+	 float far xmax, float far ymax);
+int round(float);
+void Circle (int,float ,float , float);
+void Circl (float, float ,float);
+void PieSlice (float, float, int, int, float);
+void Line (int,float ,float,float,float);
+void Rectangle(int,float ,float ,float ,float );
+void MoveTo (float,float);
+void LineTo (float,float);
+void PutImage(float,float,void far*,int);
+void OutTextXY (int,float,float,char[]);
+void FloodFill(float,float,int);
+void FillEllipse(int,float,float,float,float);
+void numtostr(float,char[]);
+void Axes(unsigned char);
+void Box(int);
+void RangeBox(float);
